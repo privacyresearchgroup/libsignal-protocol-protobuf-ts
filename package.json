@@ -1,11 +1,11 @@
 {
-  "name": "@rolfe/libsignal-protocol-protobuf-ts",
-  "version": "0.0.0",
+  "name": "@privacyresearch/libsignal-protocol-protobuf-ts",
+  "version": "0.0.1",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Rolfe Schmidt <rolfeschmidt@gmail.com>",
   "license": "GPL-3.0-only",
-  "private": false,
+  "private": true,
   "scripts": {
     "test": "jest --config jestconfig.json",
     "lint": "eslint -c .eslintrc.js  '**/*.ts'",
