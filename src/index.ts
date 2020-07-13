@@ -1,2 +1,2 @@
-export * from './generated/messages'
-// export * from './generated/pushmessages'
+export * from './generated/protos/PushMessages'
+export * from './generated/protos/WhisperTextProtocol'

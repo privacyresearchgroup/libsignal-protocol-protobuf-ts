@@ -1,6 +1,6 @@
 {
   "name": "@privacyresearch/libsignal-protocol-protobuf-ts",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Rolfe Schmidt <rolfeschmidt@gmail.com>",
@@ -10,7 +10,8 @@
     "lint": "eslint -c .eslintrc.js  '**/*.ts'",
     "format": "prettier '**/{*.{js?(on),ts?(x),md},.*.js?(on)}' --write --list-different --config prettier.config.js",
     "prepare": "yarn run build",
-    "build": "./compile.sh && tsc -d",
+    "compile": "./compile.sh",
+    "build": "tsc -d",
     "prepublishOnly": "yarn run lint",
     "preversion": "yarn run lint && yarn test",
     "version": "yarn run format && git add -A src",
@@ -29,7 +30,7 @@
     "typescript": "^3.9.6"
   },
   "dependencies": {
-    "protobufjs": "^6.9.0"
+    "ts-proto": "^1.26.0"
   },
   "files": [
     "lib/*.js",
