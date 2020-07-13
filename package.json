@@ -35,7 +35,7 @@
   "files": [
     "lib/*.js",
     "lib/*.d.ts",
-    "lib/generated/*.d.ts",
-    "lib/generated/*.js"
+    "lib/generated/protos/*.d.ts",
+    "lib/generated/protos/*.js"
   ]
 }
