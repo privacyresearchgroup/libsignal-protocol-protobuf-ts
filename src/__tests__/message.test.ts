@@ -1,4 +1,4 @@
-import { textsecure } from '..'
+import { textsecure } from '../../generated/messages'
 
 const ephemeralKey = Uint8Array.from([0, 1, 2, 3, 4])
 const ciphertext = Uint8Array.from([5, 6, 7, 8, 9])

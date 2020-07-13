@@ -10,7 +10,7 @@
     "lint": "eslint -c .eslintrc.js  '**/*.ts'",
     "format": "prettier '**/{*.{js?(on),ts?(x),md},.*.js?(on)}' --write --list-different --config prettier.config.js",
     "prepare": "yarn run build",
-    "build": "tsc -d",
+    "build": "./compile.sh && tsc -d",
     "prepublishOnly": "yarn run lint",
     "preversion": "yarn run lint && yarn test",
     "version": "yarn run format && git add -A src",
@@ -34,7 +34,7 @@
   "files": [
     "lib/*.js",
     "lib/*.d.ts",
-    "lib/protos/*.d.ts",
-    "lib/protos/*.js"
+    "lib/generated/*.d.ts",
+    "lib/generated/*.js"
   ]
 }
