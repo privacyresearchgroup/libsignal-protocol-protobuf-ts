@@ -1,3 +1,10 @@
+/*
+ *
+ * Copyright (c) 2020 Privacy Research, LLC
+ *
+ *  Licensed under GPL v3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
+ *
+ */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 /* eslint-disable @typescript-eslint/ban-types */
@@ -113,7 +120,7 @@ export const PushMessageContentCompatible = {
         const obj: any = {}
         obj.body = message.body || ''
         if (message.attachments) {
-            obj.attachments = message.attachments.map((e) =>
+            obj.attachments = message.attachments.map((e: PushMessageContent_AttachmentPointer) =>
                 e ? PushMessageContent_AttachmentPointer.toJSON(e) : undefined
             )
         } else {

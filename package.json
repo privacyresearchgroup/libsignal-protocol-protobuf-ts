@@ -4,7 +4,9 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Rolfe Schmidt <rolfeschmidt@gmail.com>",
+  "repository": "https://github.com/privacyresearchgroup/libsignal-protocol-protobuf-ts",
   "license": "GPL-3.0-only",
+  "private": false,
   "scripts": {
     "test": "jest --config jestconfig.json",
     "lint": "eslint -c .eslintrc.js  '**/*.ts'",
