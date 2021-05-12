@@ -1,6 +1,6 @@
 {
   "name": "@privacyresearch/libsignal-protocol-protobuf-ts",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Rolfe Schmidt <rolfeschmidt@gmail.com>",
